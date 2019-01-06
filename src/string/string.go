@@ -1,11 +1,10 @@
-package main
+package string
 
 import (
 	"bytes"
-	"fmt"
 )
 
-func comma(s string) string {
+func Comma(s string) string {
 	n := len(s)
 	if n <= 3 {
 		return s
@@ -23,9 +22,4 @@ func comma(s string) string {
 
 	return buf.String()
 
-}
-func main() {
-	s := "abcde"
-
-	fmt.Println(comma(s))
 }
